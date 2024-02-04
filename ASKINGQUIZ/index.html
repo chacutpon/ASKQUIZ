@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="clear" class="clear btn">
+        <i class="fas fa-trash"></i>
+    </button>
+    <h1>ตอบคำถามในชั้นเรียน
+        <button id="show" class="btn btn-small">
+            <i class="fas fa-plus"></i>&nbsp;&nbsp;เพิ่มคำถาม
+        </button>
+    </h1>
+    
+    <div class="card-container cards"> </div>
+        
+        <div class="navigation">
+            <button id="prev" class="nav-button">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+            
+            <p class="current" id="current"></p>
+            
+            <button id="next" class="nav-button">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>  
+        
+       <div id = "add-container" class="add-container">
+            <h1>
+                เพิ่มคำถาม
+                <button id="btn-hidden" 
+                class="btn-small btn-hidden">
+                <i class="fas fa-times"></i>
+                </button>              
+            </h1>
+            <div class="form-group">
+                <label for="">คำถาม</label>
+                <textarea id="question"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="">เฉลย</label>
+                <textarea id="answer"></textarea>
+            </div>
+            <button id="add-card" class="btn">
+                <i class="fas fa-plus"></i>&nbsp;&nbsp;เพิ่มโจทย์
+            </button>
+       </div>     
+        
+    <script src="script.js"></script>
+    
+</body>
+</html>
